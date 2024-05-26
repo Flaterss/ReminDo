@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="10dp"
+    app:contentPadding="10dp"
+    android:layout_height="150dp"
+    android:id="@+id/navigationView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="0.01">
+
+                <TextView
+                    android:id="@+id/h_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Do Homework"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="times"
+                    android:layout_weight="1"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:orientation="horizontal"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="0.25"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/h_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Saya harus mengerjakan tugas Pemrograman Mobile saya"
+                        android:layout_weight="0.04"
+                        />
+
+                    <TextView
+                        android:id="@+id/h_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="06-05-2024"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_weight="0.1"
+                        android:textColor="@color/cyan"
+                        android:gravity="bottom"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/h_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="13:40"
+                        android:gravity="right|bottom"
+                        android:textSize="23sp"
+                        android:layout_weight="0.3"
+                        android:textStyle="bold"
+                        android:textColor="@color/cyan"
+                        />
+
+                    <TextView
+                        android:id="@+id/h_priority"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:text="Priority"
+                        android:gravity="right|bottom"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Homework"
+                    android:singleLine="true"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:id="@+id/title"
+                    android:textColor="@android:color/black"/>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/options"
+                    android:background="@drawable/ic_more"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Doing Homework"
+                android:singleLine="true"
+                android:alpha="0.5"
+                android:id="@+id/desc"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text=""
+                android:singleLine="true"
+                android:alpha="0.5"
+                android:id="@+id/time"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="05-05-2024"
+                    android:layout_gravity="right"
+                    android:textSize="15sp"
+                    android:id="@+id/date"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="COMPLETED"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>-->
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ReminDo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+
+    //Headings
+    <string name="heading_one">Simple and Easy Reminder</string>
+    <string name="heading_two">Notification with Vibrates</string>
+    <string name="heading_three">Storage and Customizable Profile</string>
+    <string name="heading_fourth">Privacy and Security</string>
+
+    //Description
+    <string name="desc_one">This app can remind you everywhere, everytime and in every situation.</string>
+    <string name="desc_two">It also give you a notification with a sound and vibrate. So if you have something to do, you`ll immediately notice that.</string>
+    <string name="desc_three">This app also came with storage and profile. So you can customize your profile and store all your task at once.</string>
+    <string name="desc_fourth">Privacy? Someone saw your task? Don`t worry. This app cover all eyes with a login state.</string>
+
+
+</resources>

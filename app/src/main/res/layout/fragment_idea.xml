@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.IdeaFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginHorizontal="100dp"
+        android:text="IDEA"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/shadow_in"
+        android:elevation="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Wake Up Early?"
+        android:textAllCaps="true"
+        android:textAlignment="viewStart"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="30dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="170dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/shadow_in"
+        android:elevation="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Doing Homework?"
+        android:textAllCaps="true"
+        android:textAlignment="viewStart"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="30dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="240dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/shadow_in"
+        android:elevation="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Have a meeting?"
+        android:textAllCaps="true"
+        android:textAlignment="viewStart"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="30dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="310dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/shadow_in"
+        android:elevation="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Going to Date?"
+        android:textAllCaps="true"
+        android:textAlignment="viewStart"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="30dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="380dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/shadow_in"
+        android:elevation="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Pray?"
+        android:textAllCaps="true"
+        android:textAlignment="viewStart"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="30dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="450dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/shadow_in"
+        android:elevation="7dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Going to School?"
+        android:textAllCaps="true"
+        android:textAlignment="viewStart"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="30dp"
+        />
+
+</RelativeLayout>

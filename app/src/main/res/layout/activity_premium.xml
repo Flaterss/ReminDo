@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Premium">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_back"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What's Your Plan?"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:fontFamily="times"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/back"/>
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This feature offered you more function on this app"
+        android:textSize="18dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        android:textColor="@color/grey"
+        android:alpha="0.5"/>
+
+    <TextView
+        android:id="@+id/descc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You can access the premium features just for IDR 32,999.00/month. Cancel anytime"
+        android:textSize="11dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="times"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/desc"
+        android:textColor="@color/grey"
+        android:alpha="0.5"/>
+
+    <RadioGroup
+        android:id="@+id/radioGrup"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="30dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/descc">
+
+        <RadioButton
+            android:id="@+id/monthly"
+            android:checked="true"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:text="Rp. 32,999.00\nbilled monthly"
+            android:textAlignment="center"
+            android:button="@color/transparent"
+            android:background="@drawable/radio_selector_premium"/>
+
+        <RadioButton
+            android:id="@+id/yearly"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="Rp. 315,000.00                                                billed yearly"
+            android:textAlignment="center"
+            android:button="@color/transparent"
+            android:background="@drawable/radio_selector_premium"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/get"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:text="What you get?"
+        android:layout_marginTop="75dp"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:fontFamily="times"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioGrup"/>
+
+    <TextView
+        android:id="@+id/prem1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You can add unlimited task"
+        android:textColor="@color/grey"
+        android:textSize="17sp"
+        android:drawablePadding="10dp"
+        android:gravity="center|left"
+        android:drawableStart="@drawable/ic_check"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="30dp"
+        app:layout_constraintTop_toBottomOf="@id/get"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/prem2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You can choose any theme"
+        android:textColor="@color/grey"
+        android:textSize="17sp"
+        android:drawablePadding="10dp"
+        android:gravity="center|left"
+        android:drawableStart="@drawable/ic_check"
+        android:layout_marginHorizontal="30dp"
+        app:layout_constraintTop_toBottomOf="@id/prem1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/prem3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="All premium features unlocked"
+        android:textColor="@color/grey"
+        android:textSize="17sp"
+        android:drawablePadding="10dp"
+        android:gravity="center|left"
+        android:drawableStart="@drawable/ic_check"
+        android:layout_marginHorizontal="30dp"
+        app:layout_constraintTop_toBottomOf="@id/prem2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <Button
+        android:id="@+id/buy"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="80dp"
+        android:text="Continue"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/button_shape"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/descbuy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:fontFamily="times"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="10dp"
+        android:text="By Upgrading to premium, you accept ReminDo! Privacy policy and Service Terms. Your account will be charged every month/year."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buy"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Cancel Anytime"
+        android:textSize="12sp"
+        android:fontFamily="times"
+        android:layout_marginHorizontal="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/descbuy"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

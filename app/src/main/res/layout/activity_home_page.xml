@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".HomePage">
+
+
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="TO DO DAY"
+        android:textAllCaps="true"
+        android:layout_marginBottom="670dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        android:layout_marginHorizontal="100dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Good Morning, {User}"
+        android:textAllCaps="false"
+        android:layout_marginBottom="230dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:layout_marginHorizontal="20dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Seems you didn’t have a schedule today isn’t it?"
+        android:textAllCaps="false"
+        android:layout_marginBottom="190dp"
+        android:textStyle="bold"
+        android:textColor="#808080"
+        android:textSize="16dp"
+        android:layout_marginHorizontal="20dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/add_button"
+        android:drawableStart="@drawable/ic_add"
+        android:paddingHorizontal="10dp"
+        android:layout_marginTop="575dp"
+        android:layout_marginLeft="280dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:shadowDx="-3"
+        android:shadowDy="-3"
+        android:shadowColor="#000000"
+        android:shadowRadius="10"
+        />-->
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/bottomNavView"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:menu="@menu/bottom_nav_menu"
+        />
+</LinearLayout>

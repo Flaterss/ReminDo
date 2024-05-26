@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfile">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:elevation="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Edit Profile"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:elevation="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        android:background="@drawable/profile"
+        >
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="70dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/photoProfile"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:padding="5dp"
+                android:src="@drawable/photo"
+                app:shapeAppearanceOverlay="@style/circular"
+                app:strokeColor="@color/white"
+                app:strokeWidth="5dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:alpha="0.35"
+                android:padding="5dp"
+                android:src="@drawable/camera"
+                app:shapeAppearanceOverlay="@style/circular"
+                app:strokeColor="@color/white"
+                app:strokeWidth="5dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Info"
+            android:textSize="18dp"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/nama"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_btn"
+            android:layout_marginHorizontal="30dp"
+            android:text="User"
+            android:paddingStart="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="30dp"
+            >
+
+            <EditText
+                android:id="@+id/ak"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn"
+                android:text="Gender"
+                android:paddingStart="20dp"
+                android:enabled="false" />
+
+            <RadioGroup
+                android:id="@+id/radioGrup"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_weight="1"
+                >
+
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:text="Male"
+                    android:textAlignment="center"
+                    android:layout_marginRight="10dp"
+                    android:button="@drawable/transparent_bg"
+                    android:background="@drawable/radio_selector_male"
+                    />
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:text="Female"
+                    android:textAlignment="center"
+                    android:button="@drawable/transparent_bg"
+                    android:background="@drawable/radio_selector_female"
+                    />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="7dp"
+            android:gravity="center"
+            android:layout_marginHorizontal="30dp">
+
+            <EditText
+                android:id="@+id/tanggal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="0.4"
+                android:background="@drawable/bg_btn"
+                android:text="DD/MM/YYYY"
+                android:paddingStart="20dp"
+                android:enabled="false" />
+
+            <Button
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn"
+                android:text="Date"
+                android:layout_marginLeft="20dp"
+                android:textAllCaps="true"
+                android:textSize="16dp"
+                />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:text="Personal Information"
+            android:textSize="18dp"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/mail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_btn"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:text="User@gmail.com"
+            android:paddingStart="20dp"
+            android:enabled="false"/>
+
+        <!--<Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Change Password?"
+            android:layout_marginHorizontal="30dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_shape"
+            android:elevation="10dp"/>-->
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Save"
+            android:textAllCaps="true"
+            android:layout_marginHorizontal="100dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/green_button"
+            android:elevation="10dp"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

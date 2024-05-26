@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navHome"
+        app:showAsAction="ifRoom"
+        android:title="Home"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:id="@+id/navIdea"
+        app:showAsAction="ifRoom"
+        android:title="Idea"
+        android:icon="@drawable/ic_idea"/>
+    <item
+        android:id="@+id/navCalendar"
+        app:showAsAction="ifRoom"
+        android:title="Calendar"
+        android:icon="@drawable/ic_calendar"/>
+    <item
+        android:id="@+id/navProfile"
+        app:showAsAction="ifRoom"
+        android:title="Profile"
+        android:icon="@drawable/ic_person"/>
+</menu>
